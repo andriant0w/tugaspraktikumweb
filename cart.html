@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .flex-head {
+      background-color:#ff523b;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .cart-page {
+      margin: 30px auto;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .cart-info {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    th {
+      text-align: left;
+      padding: 5px;
+      color: #fff;
+      background: #ff523b;
+      font-weight: normal;
+    }
+    td {
+      padding: 10px 5px;
+    }
+    td input {
+      width: 40px;
+      height: 30px;
+      padding: 5px;
+    }
+    td a {
+      color: #ff523b;
+      font-size: 12px;
+    }
+    td img {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+    }
+    .total-price {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .total-price table {
+      border-top: 3px solid #ff523b;
+      width: 100%;
+      max-width: 400px;
+    }
+    td:last-child {
+      text-align: right;
+    }
+    th:last-child {
+      text-align: right;
+    }
+    button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: right;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: normal;
+
+    }
+    .flex-footer{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+  </style>
+
+
+    <title>SHOPPING CART</title>
+</head>
+<body>
+<!-- paren div -->
+<div style="border: solid 1px;">
+
+<!-- header -->
+<div class="flex-head" style="border: solid 1px;">
+  <div>
+  KOKSHPEE
+  </div>
+  <div>
+     <a href="#">Category 1</a>|
+     <a href="#">Category 2</a>|
+     <a href="#">Category 3</a>
+  </div>
+  <div>
+      <img src="aset/search.png" width="20px" alt="">
+      <img src="aset/cart.png" width="15px" alt="">
+      Cart(1)
+  </div>
+</div>
+
+
+
+<!-- CART CONTENTS-->
+  <div class="small-container cart-page">
+
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="aset/sepatu.jpg" alt="Chealsea Boots">
+            <div>
+              <p>Sepatu Chealsea Boots</p>
+              <small>Price: Rp1.500.000</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>Rp1.500.000</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="aset/chinos.jpg" alt="Celana Chinos">
+            <div>
+              <p>Celana Chinos Hitam</p>
+              <small>Price: Rp500.000</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>RP500.000</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="aset/black.jpg" alt="Kemeja Hitam">
+            <div>
+              <p>Kemeja Lengan Hitam</p>
+              <small>Price: Rp400.000</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>RP400.000</td>
+      </tr>
+    </table>
+
+<!-- SUMMARY OF ORDER -->
+    <div class="total-price">
+
+      <table>
+        <tr>
+          <td>Subtotal</td>
+          <td>Rp2.400.000</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td>Rp500.000</td>
+        </tr>
+        <tr>
+          <td>Est. Taxes</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>Rp2.900.000</td>
+        </tr>
+        <tr>
+          <td colspan="3"><button><b>CHEKOUT</b></button></td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+<!-- Footer -->
+  <div class="flex-footer" style="border: solid 1px;">
+    <div>
+      KOKSHPEE<br>
+      <img src="aset/visa_colored.jpg" alt="" width="20px">
+      <img src="aset/master_card.png" alt="" width="20px">
+    </div>
+  <div>
+      <a href="#">Category x</a>|
+      <a href="#">Category y</a>|
+      <a href="#">Category z</a>
+  </div>
+  <div>
+      Stay In Touch! Join our Newsletter.<br>
+      <input type="text" placeholder="Search">
+      <button style="background-color: red; color: aliceblue;">Subscribe</button>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
