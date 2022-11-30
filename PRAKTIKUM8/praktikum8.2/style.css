@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    min-height: 500px;
+    flex-direction: column;
+}
+
+header, footer{
+    background-color: rgb(48, 3, 249);
+    padding: 15px;
+}
+
+main{
+    display: flex;
+    flex: 1;
+}
+
+main article{
+    background-color: aqua;
+    flex: 2;
+}
+
+main aside{
+    background-color: blueviolet;
+    flex: 1;
+}
+
+main nav{
+    background-color: yellowgreen;
+    flex: 1;
+}
